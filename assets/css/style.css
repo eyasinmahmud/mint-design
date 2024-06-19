@@ -1,0 +1,532 @@
+
+
+/* Design by eyasin mahmud +8801880379743 Whatapp */
+
+/* GT-Walsheim fonts */
+@font-face {
+    font-family: 'gtwal400' ;
+    src: url(../fonts/GT-Walsheim/GT-Walsheim-Regular-Trial-BF651b7fc71a47d.otf);
+}
+@font-face {
+    font-family: 'gtWal700' ;
+    src: url(../fonts/GT-Walsheim/GT-Walsheim-Ultra-Bold-Oblique-Trial-BF651b7fc60ad12.otf);
+}
+/* GT-Super-display fonts */
+@font-face {
+    font-family: 'gtsuper400' ;
+    src: url(../fonts/GT-Super/GT-Super/GT-Super/GT-Super-Text-Regular-Trial.otf);
+}
+@font-face {
+    font-family: 'gtsuper700' ;
+    src: url(../fonts/GT-Super/GT-Super/GT-Super/GT-Super-Display-Bold-Trial.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Hero Css ::: Start */
+#main-hero{
+    height: 100vh;
+    background: rgba(2, 128, 101, 0.8);
+    position: relative;
+    overflow: hidden;
+}
+.header-nav-area{
+    height: 100px;
+}
+.logo{
+     /* width: 40%; */
+}
+.logo img{
+    width: 250px;
+}
+.Navigation ul{
+   list-style: none;
+}
+.Navigation ul li a{
+   text-decoration: none;
+   color: #83DEB2;
+   font-family: 'gtWal700';
+   font-size: 16px;
+   position: relative;
+}
+.Navigation ul li a::after {
+    content: "";
+    width: 15px;
+    height: 0px;
+    background: #83DEB2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-123%);
+    border-radius: 10px;
+    transition: .3s;
+    
+}
+.Navigation ul li a:hover::after{
+    height: 64px;
+    transition: .3s;
+}
+
+.hero-center-content{
+   margin-top: 200px;
+}
+.hero-center-content h1{
+    font-size: 64px;
+    color: #83DEB2;
+    font-family: 'gtWal700';
+    text-align: center;
+}
+.hero-center-content h2{
+    font-size: 64px;
+    color: #83DEB2;
+    font-family: 'gtsuper400';
+    text-align: center;
+}
+a{
+    text-decoration: none !important;
+}
+.hero-btn-one{
+    background: #fff;
+    color: #000;
+    padding: 20px 30px;
+    border-radius: 50px;
+    font-family: 'gtwal400';
+    font-size: 19px;
+    transition: .3s;
+    display: inline-block;
+}
+.hero-btn-tow{
+    background: #fff;
+    color: #000;
+    padding: 20px 30px;
+    border-radius: 50px;
+    font-family: 'gtwal400';
+    font-size: 19px;
+    transition: .3s;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.hero-btn-one i{
+    margin-left: 10px;
+}
+.hero-btn-tow i{
+    margin-left: 10px;
+}
+.hero-btn-one:hover{
+   transform: scale(1.02);
+}
+.hero-btn-tow:hover{
+   transform: scale(1.02);
+}
+.back-video-hero{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video-hero{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .back-video-hero{
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+/* MArkeating Section ::: Start */
+.markeating-section{
+    background: #F6EFE7;
+    position: relative;
+    padding: 50px 0px 300px 0px;
+}
+.markeating-info h1{
+    font-family: 'gtsuper400';
+    font-size: 48px;
+    line-height: 52px;
+    margin-bottom: 25px;
+    
+}
+.markeating-info p{
+    font-family: 'gtwal400';
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 25px;
+
+}
+.markeating-info a{
+    font-family: 'gtwal400';
+    font-size: 19px;
+    color: #000;
+    padding: 20px 30px;
+    border-radius: 30px;
+    position: relative;
+    margin-left: -35px;
+    display: inline-block;
+    z-index: 1;
+}
+.markeating-info a:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 72px;
+    top: 0px;
+    right: 0px;
+    background-color: #C6F7EA;
+    z-index: -1;
+    border-radius: 36px;
+    transition: .3S;
+    box-shadow: 1px 2px 2px #00000047;
+}
+.markeating-info a::after{
+    content: '';
+    position: relative;
+    display: inline-block;
+    height: 24px;
+    width: 28px;
+    top: 4px;
+    right: -6px;
+    background-image: url(../img/arrow-right.svg);
+    background-size: cover;
+    margin-left: 30px;
+
+}
+.markeating-info a:hover::before{
+    width: 100%;
+}
+.markeating-info i {
+    margin-left: 10px;
+    background: #83DEB2;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 1px 4px 5px #999;
+}
+.markeating-img img{
+    width: 80%;
+}
+.markeating-img {
+    text-align: center;
+}
+.wavy-bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Award Section css */
+.award-section{
+  padding-bottom: 100px;
+    background: #83DEB2;
+}
+.award-section h1{
+  margin-bottom: 100px;
+    font-family: 'gtsuper400';
+    font-size: 48px;
+    color: #000;
+    text-align: center;
+}
+.award-box{
+    text-align: center;
+}
+.award-box h3{
+    font-family: 'gtwal700';
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 15px;
+}
+.award-box p{
+    font-family: 'gtwal400';
+    font-size: 17px;
+    line-height: 24px;
+}
+/* Work with clients Section */
+.work-with-client{
+    background: #83DEB2;
+}
+.work-with-client h1{
+    font-size: 48px;
+    line-height: 53px;
+    font-family: 'gtsuper400';
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+.b-tile__item-wrapper .b-tile__item-wrapper { padding: 0px !important; 
+    border-radius: 190px; 
+    max-width: 330px; 
+    overflow: hidden; 
+    position: relative; 
+    margin: 0 auto; 
+    -webkit-mask-image: -webkit-radial-gradient(white, black); 
+    transition: .3s;
+}
+.b-tile__item-wrapper .b-tile__item-wrapper:after { content: ''; 
+    position: absolute; 
+    height: 100%; 
+    width: 100%; 
+    top: 0px; 
+    right: 0px; 
+    background-color: rgba(2,128,101,0); 
+    -webkit-transition: all 200ms ease; 
+    -o-transition: all 200ms ease; 
+    transition: all 200ms ease; 
+}
+.b-tile__item-wrapper a:hover .b-tile__item-wrapper:after { 
+    background-color: rgba(2,128,101,0.9); 
+    transition: .3s;
+}
+
+.b-tile__item-wrapper a:hover .b-tile__img { 
+    transform: scale(1.1); 
+    transition: .3s;
+}
+
+.b-tile__title { -webkit-transition: all 200ms ease; 
+    -o-transition: all 200ms ease; 
+    transition: all 200ms ease; 
+    position: absolute; 
+    display: none; 
+    text-align: center; 
+    width: 100%; 
+    top: 50%; 
+    padding: 0px !important; 
+    margin: -20px 0px !important; 
+    color: #83DEB2; 
+    z-index:1; 
+}
+.b-tile__item-wrapper a:hover .b-tile__title { 
+    display: block; 
+    transition: .3s;
+}
+
+/* Brand Css */
+
+.brand-items{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.brand-items > img{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.bg-wavy-three{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+/* Wgat do links */
+
+.what-do-info-links > a{
+    font-family: 'gtsuper';
+    font-size: 48px;
+    line-height: 53px;
+    display: block;
+    color: black;
+    text-decoration: none;
+   text-align: center;
+   margin-top: 20px;
+   transition: .3s;
+   z-index: 12;
+}
+
+.what-do-info-links > a:hover{
+  color: #83DEB2 ;
+}
+
+.inside-btn{
+    background: #C6F7EA;
+    color: #000;
+    padding: 20px 30px;
+    border-radius: 50px;
+    font-family: 'gtwal400';
+    font-size: 19px;
+    transition: .3s;
+    display: inline-block;
+    box-shadow: 0px 3px 6px rgba(2, 128, 101, 0.15);
+}
+.inside-btn:hover{
+    transform: scale(1.02);
+}
+.wavy-bg-four{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.inside-minds-title h1{
+    font-family: 'gtsuper400';
+    font-size: 48px;
+    line-height: 52px;
+    margin-bottom: 30px;
+}
+.inside-minds-title p{
+    font-family: 'gtwal400';
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+.inside-minds-banner{
+    position: relative;
+}
+.inside-minds-banner > img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+    z-index: -3;
+}
+.play-icons a > img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 160px;
+    cursor: pointer;
+    z-index: 1;
+}
+.play-icons-outline > img {
+    position: absolute;
+    top: 29%;
+    left: 38%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    animation-name: video-outline-runing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    width: 149px;
+}
+
+@keyframes video-outline-runing{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+ul.footer-menus{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-logo{
+    width: 300px;
+}
+.footer-contuct-info{
+    float: right;
+}
+.footer-copyright{
+    float: right;
+}
+#mobile-menus{
+    display: none;
+}
+
+
+
+
+
+
+/* Whata WE do css */
+
+
+#whta-we-do-main-hero {
+   background-image: url('../img/what-hero-banner.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+
+}
+.what-hero-center-content h2 {
+    font-size: 64px;
+    color: #83DEB2;
+    font-family: 'gtsuper400';
+    margin-top: 115px;
+}
+
+/* Blog Section Css */
+
+.blog-box-link:hover{
+    transition: .3s;
+}
+.blog-box-img > img{
+    transition: .3s;
+}
+.blog-box-link:hover .blog-box-img > img{
+    transform: scale(1.1);
+    z-index: -1;
+    transition: .3s;
+}
+.blog-box-link:hover .blog-box-text > h4{
+    color: #83DEB2;
+    z-index: 1;
+    transition: .3s;
+    transform: scale(1.2);
+}
+.blog-box-text > h4{
+    color: #000000;
+    transition: .3s;
+
+}
+.blog-section{
+    padding-bottom: 80px;
+}
+.border-last{
+    border-bottom: 2px solid #000;
+}
+
+/* Our Service Section :: Css */
+.our-services{
+    padding: 75px 0px;
+}
+.service-box-content-list > li{
+    font-family: 'gtwal400';
+    font-size: 17px;
+    line-height: 30px;
+
+}
+.offcanvas-header{
+    background: #028065;
+}
+
+
+
+
+
+
+/* Design by eyasin mahmud +8801880379743 Whatapp */
+
+

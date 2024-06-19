@@ -1,0 +1,59 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 991px) {
+
+
+    ul.footer-menus {
+        display: block;
+        margin-top: 30px;
+        padding-left: 0px;
+    }
+    .footer-logo{
+        width: 250px;
+    }
+    .footer-contuct-info{
+        float: left;
+        margin-top: 30px;
+    }
+    .footer-copyright{
+        float: left;
+    }
+    .play-icons-outline > img {
+        display: none;
+    }
+    /* Navigation Hide */
+    .header-nav-area {
+        display: none !important;
+    }
+    #mobile-menus{
+        display: block;
+    }
+    .hero-center-content h1 {
+        font-size: 50px;
+    }
+    .hero-center-content h2 {
+        font-size: 50px;
+    }
+    .hero-btn-one {
+        padding: 13px 20px;
+        font-size: 16px;
+    }
+    .hero-btn-tow {
+        padding: 13px 20px;
+        font-size: 16px;
+    }
+    .award-section h1 {
+        font-size: 38px;
+    }
+    .work-with-client h1 {
+        font-size: 40px;
+    }
+    .what-do-info-links > a {
+        font-size: 35px;
+    }
+    
+
+
+
+
+
+}
